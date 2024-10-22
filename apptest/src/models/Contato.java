@@ -1,3 +1,5 @@
+//O Model representa o banco de dados no projeto, tendo uma conexão no ./repository
+
 package models;
 
 public class Contato {
@@ -5,7 +7,7 @@ public class Contato {
     private String nome, email, telefone;
 
     //CONSTRUCTORS
-    public Contato(){}
+    public Contato () {}
     public Contato (int id) {
         this.id = id;
     }
@@ -51,5 +53,10 @@ public class Contato {
     }
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }
